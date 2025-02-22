@@ -7,12 +7,12 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f9f5f0; /* Light beige background */
+    color: #4b3d3d; /* Dark brown text */
 }
 
 header {
-    background: #333;
+    background: #8b5a2b; /* Brown header */
     color: #fff;
     padding: 10px 0;
 }
@@ -55,21 +55,58 @@ main {
     padding: 20px;
 }
 
-section {
-    margin-bottom: 20px;
+h1, h2, h3 {
+    color: #8b5a2b; /* Brown headings */
 }
 
-h2 {
-    margin-bottom: 10px;
+.job, .edu {
+    background: #fff; /* White background for job/education sections */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 footer {
+    background: #8b5a2b; /* Brown footer */
+    color: #fff;
     text-align: center;
     padding: 10px 0;
-    background: #333;
-    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    background: #8b5a2b; /* Brown button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #704d3a; /* Darker brown on hover */
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
     .nav-links {
         display: none;

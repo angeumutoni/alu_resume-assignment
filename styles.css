@@ -12,11 +12,20 @@ body {
 header {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
+    width: 100%;
     padding: 20px 40px;
     z-index: 100;
-    width: 100%;
     background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    /* Add styles for your logo */
+    width: 100px; /* Example */
+    height: auto; /* Example */
 }
 
 nav ul {
@@ -24,6 +33,7 @@ nav ul {
     margin: 0;
     padding: 0;
     text-align: right;
+    display: flex;
 }
 
 nav li {
@@ -37,10 +47,19 @@ nav a {
     font-size: 18px;
 }
 
+/* Section styles (for full-viewport height) */
+section {
+    min-height: 100vh;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Hero section styles */
 #hero {
     text-align: left;
-    padding: 100px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -94,12 +113,6 @@ h1 {
 
 /* About section styles */
 #about {
-    min-height: 100vh;
-    padding: 100px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     align-items: flex-start;
     padding-top: 150px;
     padding-left: 100px;
@@ -135,12 +148,6 @@ h1 {
 
 /* Education section styles */
 #education {
-    min-height: 100vh;
-    padding: 100px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     align-items: flex-start;
     padding-top: 150px;
     padding-left: 100px;
@@ -189,12 +196,6 @@ h1 {
 
 /* Projects section styles */
 #projects {
-    min-height: 100vh;
-    padding: 100px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     align-items: flex-start;
     padding-top: 150px;
     padding-left: 100px;
@@ -237,12 +238,6 @@ h1 {
 
 /* Skills section styles */
 #skills {
-    min-height: 100vh;
-    padding: 100px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     align-items: flex-start;
     padding-top: 150px;
     padding-left: 100px;
@@ -289,6 +284,18 @@ h1 {
 
 /* Contact section styles */
 #contact {
-    min-height: 100vh;
-    padding: 100px 0;
-    display: flex;
+    align-items: flex-start;
+    padding-top: 150px;
+    padding-left: 100px;
+    justify-content: flex-start;
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact h1 {
+    font-family: 'Playfair Display', serif;
+    font

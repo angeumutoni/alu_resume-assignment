@@ -15,6 +15,8 @@ header {
     right: 0;
     padding: 20px 40px;
     z-index: 100;
+    width: 100%;
+    background-color: #000;
 }
 
 nav ul {
@@ -42,26 +44,20 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.hero-content {
+}.hero-content {
     max-width: 900px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.hero-image {
+}.hero-image {
     width: 250px;
     height: 350px;
     overflow: hidden;
     border-radius: 50%;
     transform: rotate(45deg);
     margin-bottom: 30px;
-}
-
-.hero-image img {
+}.hero-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -74,13 +70,11 @@ h1 {
     margin-bottom: 20px;
     text-align: center;
     line-height: 1;
-}
-
-.hero-divider {
+}.hero-divider {
     width: 200px;
     height: 2px;
     background-color: #fff;
-    margin-bottom: 30px;
+    margin: 30px auto; 
 }
 
 #hero p {
@@ -89,206 +83,182 @@ h1 {
     text-align: center;
 }
 
-/* About page styles */
-#about-page {
+/* About section styles */
+#about {
     padding: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    min-height: calc(100vh - 100px);
-}
-
-.about-content {
+}.about-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
     padding: 0 20px;
 }
 
-#about-page h1 {
+#about h1 {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     margin-bottom: 30px;
     text-align: center;
 }
 
-#about-page p {
+#about p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 40px;
-}
-
-.divider {
+}.divider {
     width: 100px;
     height: 2px;
     background-color: #fff;
-    margin: 0 auto;
-    margin-bottom: 50px;
+    margin: 0 auto 50px; 
 }
 
-/* Education page styles */
-#education-page {
+/* Education section styles */
+#education {
     padding: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: calc(100vh - 100px);
-}
-
-.education-content {
+}.education-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
 }
 
-#education-page h1 {
+#education h1 {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     margin-bottom: 50px;
     text-align: center;
-}
-
-.education-entry, .experience-entry {
+}.education-entry,.experience-entry {
     margin-bottom: 40px;
-}
-
-.entry-title {
+}.entry-title {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 10px;
     text-transform: uppercase;
     color: #A0A0A0;
-}
-
-.entry-content {
+}.entry-content {
     font-size: 18px;
     line-height: 1.6;
-}
-
-.entry-content p {
+}.entry-content p {
     margin-bottom: 15px;
 }
 
-/* Projects page styles */
-#projects-page {
+/* Projects section styles */
+#projects {
     padding: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: calc(100vh - 100px);
-}
-
-.projects-content {
+}.projects-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
 }
 
-#projects-page h1 {
+#projects h1 {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     margin-bottom: 50px;
     text-align: center;
-}
-
-.project {
+}.project {
     margin-bottom: 40px;
-}
-
-.project-title {
+}.project-title {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 10px;
     color: #A0A0A0;
-}
-
-.project-description {
+}.project-description {
     font-size: 18px;
     line-height: 1.6;
-}
-
-.project-description p {
+}.project-description p {
     margin-bottom: 15px;
 }
 
-/* Skills page styles */
-#skills-page {
+/* Skills section styles */
+#skills {
     padding: 100px 0;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the left */
-    min-height: calc(100vh - 100px);
-    padding-left: 100px; /* Add left padding for the content area */
-}
-
-.skills-content {
+    align-items: flex-start;
+    padding-left: 100px;
+}.skills-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: left;
 }
 
-#skills-page h1 {
+#skills h1 {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
-    margin-bottom: 30px; /* Adjust margin as needed */
-    text-align: left;
-}
-
-.skill-category {
-    margin-bottom: 60px; /* Adjust margin as needed */
-}
-
-.skill-title {
+    margin-bottom: 30px;
+    text-align: left; 
+}.skill-category {
+    margin-bottom: 60px;
+}.skill-title {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 20px;
-    margin-bottom: 20px; /* Adjust margin as needed */
+    margin-bottom: 20px;
     color: #A0A0A0;
-}
-
-.skill-list {
-    list-style: none; /* Remove bullet points */
-    padding: 0; /* Remove default padding */
+}.skill-list {
+    list-style: none;
+    padding: 0;
     font-size: 18px;
     line-height: 1.6;
-    column-count: 2; /* Split the list into two columns */
-    column-gap: 40px; /* Adjust gap between columns */
+    column-count: 2;
+    column-gap: 40px;
+}.skill-list li {
+    margin-bottom: 10px;
 }
 
-.skill-list li {
-    margin-bottom: 10px; /* Space between list items */
-}
-
-/* Contact page styles */
-#contact-page {
+/* Contact section styles */
+#contact {
     padding: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: calc(100vh - 100px);
-}
-
-.contact-content {
-    max-width: 900px;
+}.contact-content {
+    max-width: 800px;
     margin: 0 auto;
     text-align: left;
-    padding: 0 100px; /* Add left and right padding */
+    padding: 0 100px;
 }
 
-#contact-page h1 {
+#contact h1 {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     margin-bottom: 50px;
     text-align: center;
-}
-
-.contact-details {
+}.contact-details {
     display: flex;
-    justify-content: space-between; /* Distribute details evenly */
+    justify-content: space-between;
+}.contact-detail {
+    flex: 1;
+    margin: 0 15px; 
+}.detail-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #A0A0A0;
+}.detail-content {
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-.contact-detail {
-    flex: 1; /* Make each detail take
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

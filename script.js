@@ -1,27 +1,15 @@
-// script.js
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default jump behavior
 
-// Function to toggle the mobile menu
-const mobileMenu = document.getElementById('mobile-menu');
-const navLinks = document.querySelector('.nav-links');
+        const targetId = this.getAttribute('href').substring(1); // Get target ID
+        const targetElement = document.getElementById(targetId); // Find target element
 
-mobileMenu.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
-
-// Optional: Form validation (basic example)
-const contactForm = document.getElementById('contact-form');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', (event) => {
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-
-        if (!name || !email || !message) {
-            alert('Please fill in all fields.');
-            event.preventDefault(); // Prevent form submission
-        } else {
-            alert('Thank you for your message!');
+        if (targetElement) { // Check if element exists
+          window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: 'smooth'
+          });
         }
     });
-}
+});

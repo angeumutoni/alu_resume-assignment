@@ -12,20 +12,14 @@ body {
 header {
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
     padding: 20px 40px;
     z-index: 100;
-    background-color: #000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    transition: transform 0.3s ease; /* Add transition for transform */
 }
 
-.logo {
-    /* Add styles for your logo */
-    width: 100px; /* Example */
-    height: auto; /* Example */
+header.scrolled {
+    transform: translateY(-100%); /* Slide header up on scroll */
 }
 
 nav ul {
@@ -33,7 +27,6 @@ nav ul {
     margin: 0;
     padding: 0;
     text-align: right;
-    display: flex;
 }
 
 nav li {
@@ -47,255 +40,115 @@ nav a {
     font-size: 18px;
 }
 
-/* Section styles (for full-viewport height) */
+/* Common section styles */
 section {
-    min-height: 100vh;
     padding: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    min-height: calc(100vh - 100px);
+}
+
+/* Content container for all sections */.section-content {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 20px;
 }
 
 /* Hero section styles */
 #hero {
-    text-align: left;
+    text-align: center;
+}.hero-content {
+    max-width: 900px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-
-.hero-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 40px;
-}
-
-.hero-text {
-    flex: 1;
+}.hero-image {
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    margin-bottom: 30px;
+}.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: rotate(-45deg);
 }
 
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 60px;
     margin-bottom: 20px;
+    text-align: center;
     line-height: 1;
-}
-
-.hero-divider {
-    width: 100px;
+}.hero-divider {
+    width: 200px;
     height: 2px;
     background-color: #fff;
-    margin: 30px 0;
+    margin-bottom: 30px;
 }
 
 #hero p {
     font-size: 20px;
     line-height: 1.6;
+    text-align: center;
 }
 
-.hero-image {
-    width: 300px;
-    height: auto;
-    margin-left: 40px;
-}
-
-.hero-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* About section styles */
-#about {
-    align-items: flex-start;
-    padding-top: 150px;
-    padding-left: 100px;
-    justify-content: flex-start;
-}
-
-.about-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-    padding: 0 20px;
-}
-
-#about h1 {
+/* About page styles */
+#about-page h1 {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
-    margin-bottom: 20px;
-    text-align: left;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-#about p {
+#about-page p {
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 30px;
-}
-
-.divider {
+    margin-bottom: 40px;
+}.divider {
     width: 100px;
     height: 2px;
     background-color: #fff;
-    margin: 0 auto 50px;
-}
-
-/* Education section styles */
-#education {
-    align-items: flex-start;
-    padding-top: 150px;
-    padding-left: 100px;
-    justify-content: flex-start;
-}
-
-.education-content {
-    max-width: 800px;
     margin: 0 auto;
-    text-align: left;
+    margin-bottom: 50px;
 }
 
-#education h1 {
+/* Education page styles */
+#education-page h1 {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     margin-bottom: 50px;
-    text-align: left;
-}
-
-.education-entry, .experience-entry {
+    text-align: center;
+}.education-entry,.experience-entry {
     margin-bottom: 40px;
-}
-
-.entry-title {
+}.entry-title {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 20px;
-    margin-bottom: 20px;
-    color: #A0A0A0;
-}
-
-.entry-content {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.entry-content ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-bottom: 0;
-}
-
-.entry-content li {
     margin-bottom: 10px;
-}
-
-/* Projects section styles */
-#projects {
-    align-items: flex-start;
-    padding-top: 150px;
-    padding-left: 100px;
-    justify-content: flex-start;
-}
-
-.projects-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-#projects h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 48px;
-    margin-bottom: 50px;
-    text-align: left;
-}
-
-.project {
-    margin-bottom: 60px;
-}
-
-.project-title {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 20px;
+    text-transform: uppercase;
     color: #A0A0A0;
-}
-
-.project-description {
+}.entry-content {
     font-size: 18px;
     line-height: 1.6;
-}
-
-.project-description p {
+}.entry-content p {
     margin-bottom: 15px;
 }
 
-/* Skills section styles */
-#skills {
-    align-items: flex-start;
-    padding-top: 150px;
-    padding-left: 100px;
-    justify-content: flex-start;
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
-.skills-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
+footer p {
+    margin: 0;
+    text-align: center;
 }
-
-#skills h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 48px;
-    margin-bottom: 50px;
-    text-align: left;
-}
-
-.skill-category {
-    margin-bottom: 60px;
-}
-
-.skill-title {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #A0A0A0;
-}
-
-.skill-list {
-    list-style: none;
-    padding: 0;
-    font-size: 18px;
-    line-height: 1.6;
-    column-count: 2;
-    column-gap: 40px;
-}
-
-.skill-list li {
-    margin-bottom: 10px;
-}
-
-/* Contact section styles */
-#contact {
-    align-items: flex-start;
-    padding-top: 150px;
-    padding-left: 100px;
-    justify-content: flex-start;
-}
-
-.contact-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-#contact h1 {
-    font-family: 'Playfair Display', serif;
-    font

@@ -5,180 +5,283 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ange UMUTONI Portifolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navigation Bar Section -->
+    <!-- Responsive navigation with hamburger menu for mobile, theme toggle, and main nav links -->
+    <nav class="navbar fixed-nav glass-gradient" role="navigation" aria-label="main navigation">
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+        </ul>
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
 
-    <section id="hero">
+    <!-- Hero Section -->
+    <!-- Personal introduction with animated profile picture and social media links -->
+    <section id="about" class="hero">
         <div class="hero-content">
-            <div class="hero-text">
-                <h1>WELCOME TO MY<br>RESUME</h1>
-                <p>Explore my experience, skills, and projects.</p>
-                <div class="hero-divider"></div>
+            <div class="profile-container">
+                <div class="profile-image ss">
+                    <img src="./images/Ange UMUTONI.jpeg" alt="Profile picture" class="animated-profile">
+                </div>
+                <div class="profile-glow"></div>
             </div>
-            <div class="hero-image">
-                <img src="your-picture.jpg" alt="Your Picture">
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="about-content">
-            <h1>About</h1>
-            <p>I am a proactive and self-driven individual with the potential<br>
-            to grow and very passionate about providing innovative and<br>
-            sustainable solutions to shape an excellent customer<br>
-            experience.</p>
-            <div class="divider"></div> 
-        </div>
-    </section>
-
-    <section id="education">
-        <div class="education-content">
-            <h1>Education</h1>
-
-            <div class="education-entry">
-                <div class="entry-title">
-                    <span>Education</span>
-                </div>
-                <div class="entry-content">
-                    <p>BSc. Software Engineering at African<br>
-                    Leadership University, expected 2027</p>
-                </div>
-            </div>
-
-            <div class="experience-entry">
-                <div class="entry-title">
-                    <span>Work Experience</span>
-                </div>
-                <div class="entry-content">
-                    <ul>
-                        <li>Customer Service Representative at<br>
-                        Bboxx 2024-present</li>
-                        <li>System Runner at iDebate Rwanda<br>
-                        2023 - present</li>
-                        <li>Executive Assistant at HiQ Africa<br>
-                        2024</li>
-                    </ul>
-                </div>
+            <h1>WELCOME TO MY RESUME<br> <span class="gradient-text">Explore my experience, skills, and projects.</span></h1>
+            <p class="subtitle">I am a proactive and self-driven individual with the potential to grow and very passionate about providing innovative and sustainable solutions to shape an excellent customer experience.</p>
+            <div class="social-links">
+                <a href="https://wa.me/250780553024" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://github.com/angeumutoni" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/angeumutoni/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:umutoniange40@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </section>
-
-    <section id="projects">
-        <div class="projects-content">
-            <h1>Projects</h1>
-
-            <div class="project">
-                <div class="project-title">
-                    <span>Creating an e-Library</span>
+    <!-- The education Section -->
+    <section id="my-education" class="my-education">
+        <div class="stars"></div>
+        <div class="moon"></div>
+        <div class="content">
+            <h2>Education</h2>
+            <p class="section-subtitle">Here is a summary of my education background.</p>
+        <!-- Secondary ALevel -->
+            
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon blue">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3>Ecole Secondaire Marie Adelaide 2020 - 2023</h3>
+                        <p>High School Diploma in Mathematics-Computer Science-Economics</p>
+                    </div>
+                    <div class="underline blue"></div>
                 </div>
-                <div class="project-description">
-                    <p>An e-library project, leveraging cloud storage, digital asset<br>
-                    management systems, and user-friendly interfaces, aiming to provide<br>
-                    accessible and searchable digital resources, fostering knowledge<br>
-                    sharing and learning outcomes for a wider audience.</p>
-                </div>
-            </div>
+                        <!-- University -->
 
-            <div class="project">
-                <div class="project-title">
-                    <span>Creating a CRM System</span>
-                </div>
-                <div class="project-description">
-                    <p>A CRM system project, utilizing cloud-based infrastructure, database<br>
-                    management systems, and API integrations, aims to centralize<br>
-                    customer data and automate sales processes, improving customer<br>
-                    relationships and increasing sales efficiency.</p>
+                <div class="service-item">
+                    <div class="service-icon purple">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="service-text">
+                        <h3>African Leadership University - Expected 2027</h3>
+                        <p>Relevant coursework:  Linux and IT tools, Python programming, databases, mobile and web development and infrastructure, front-end and back-end web development.
+</p>
+                    </div>
+                    <div class="underline purple"></div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section id="skills">
-        <div class="skills-content">
-            <h1>Skills</h1>
-
-            <div class="skill-category">
-                <div class="skill-title">
-                    <span>Soft skills</span>
-                </div>
-                <ul class="skill-list">
-                    <li>Organization</li>
-                    <li>Leadership</li>
-                    <li>Adaptability</li>
-                    <li>Problem-solving</li>
-                    <li>Initiative</li>
-                </ul>
-            </div>
-
-            <div class="skill-category">
-                <div class="skill-title">
-                    <span>Technical skills</span>
-                </div>
-                <ul class="skill-list">
-                    <li>Jira</li>
-                    <li>MS Office</li>
-                    <li>Google Workspace</li>
-                    <li>Java, C++, C, Visual Basic, HTML, CSS</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="contact-content">
-            <h1>Contact</h1>
-
-            <div class="contact-details">
-                <div class="contact-detail">
-                    <div class="detail-title">
-                        <span>Address</span>
-                    </div>
-                    <div class="detail-content">
-                        <p>KG 238 St., Kigali City, Rwanda</p>
+    
+   
+    <!-- Professional Experience With Skills Gained-->
+    <section id="experience" class="experience-section">
+        <div class="content">
+            <h2>My Professional Side</h2>
+            <p class="section-subtitle">My Professional Experience & Skills Gained</p>
+            
+            <div class="timeline">
+                <!-- Experience 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-card">
+                        <h3>Customer Service Representative</h3>
+                        <p class="company">Bboxx Capital Rwanda Ltd</p>
+                        <p class="date">September 2024 - Present</p>
+                        <p class="description">• Making outgoing calls to customers across the Bboxx portfolio in accordance with the aftersales debt management processes.</p>
+                        <p class="description">• Conducting intensive follow-up calls to all outright/upfront customers, promoting and selling new products, and successfully closing 50% of sales from these calls; additionally, handling incoming calls from customers experiencing technical issues.</p>
+                        <p class="description">• Carrying out follow-up calls to monitor and improve customer satisfaction, as well as managing other necessary customer interactions.</p>
+                        <div class="tags">
+                            <span>Customer Service</span>
+                            <span>Sales</span>
+                            <span>Communication</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="contact-detail">
-                    <div class="detail-title">
-                        <span>Email</span>
-                    </div>
-                    <div class="detail-content">
-                        <p>umutoniange40@gmail.com</p>
+                <!-- Experience 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-card">
+                        <h3>Executive Assistant</h3>
+                        <p class="company">HiQ Africa</p>
+                        <p class="date">February 2024 - June 2024</p>
+                        <p class="description">• Providing administrative and personal assistance support including arranging, scheduling and coordinating meetings.</p>
+                        <p class="description">• Accurately drafting, editing, and formatting documents including reports, presentations, and correspondence with accuracy and efficiency.</p>
+                        <p class="description">• Handling and managing all internal and external communication including emails and phone calls professionally and courteously at all times.</p>
+                        <p class="description">• Managing customer appointments via telephone and email including coordinating client availability, scheduling within busy calendars, and ensuring timely meetings with relevant team members.</p>
+                        <div class="tags">
+                            <span>Administrative Support</span>
+                            <span>Organization</span>
+                            <span>Time Management</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="contact-detail">
-                    <div class="detail-title">
-                        <span>Phone</span>
-                    </div>
-                    <div class="detail-content">
-                        <p>+250780553024</p>
+                <!-- Experience 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-card">
+                        <h3>Volunteer - System Runner</h3>
+                        <p class="company">iDebate Rwanda</p>
+                        <p class="date">September 2023 - Present</p>
+                        <p class="description">• Monitoring and controlling the operation of the iDebate Hub learning platform involving uploading new courses, and onboarding new learners namely students and volunteers.</p>
+                        <p class="description">• Creating content regarding generating courses to help learners master the art of public speaking and debating and making appropriate changes to these courses if needed.</p>
+                        <p class="description">• Facilitating enrollment in public speaking and debate fundamentals courses on the learning platform as well as providing personalized guidance to match students with appropriate courses based on their goals and learning styles.</p>                        
+                        <div class="tags">
+                            <span>LMS Administration</span>
+                            <span>Curriculum Development</span>
+                            <span>Guidance/Advising</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Contact Section -->
+    <!-- Multi-step contact form with contact information display -->
+    <section id="contact" class="contact-section">
+        <div class="content">
+            <h2 class="connect-title">Let's Connect<span class="wave">👋</span></h2>
+            <p class="connect-subtitle">Choose your preferred way to reach out</p>
+            
+            <div class="contact-container">
+                <div class="contact-info-wrapper">
+                    <div class="contact-card info-card glass-gradient">
+                        <h3>Contact Information</h3>
+                        <div class="contact-info">
+                            <div class="info-row">
+                                <div class="info-item glass">
+                                    <i class="fas fa-envelope"></i>
+                                    <div class="info-content">
+                                        <span class="label">Email</span>
+                                        <span class="value">umutoniange40@gmail.com</span>
+                                    </div>
+                                </div>
+                                <div class="info-item glass">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="info-content">
+                                        <span class="label">Phone</span>
+                                        <span class="value">+250780553024</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-row">
+                                <div class="info-item glass">
+                                    <i class="fas fa-location-dot"></i>
+                                    <div class="info-content">
+                                        <span class="label">Location</span>
+                                        <span class="value">Kigali, Rwanda</span>
+                                    </div>
+                                </div>
+                                <div class="info-item glass">
+                                    <i class="far fa-calendar"></i>
+                                    <div class="info-content">
+                                        <span class="label">Calendly</span>
+                                        <span class="value">Schedule a meeting</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <footer>
-        <p><a href="#top" style="color:white; text-decoration:none;">Back to top</a></p>
+                <div class="contact-card form-card glass-gradient">
+                    <form id="contactForm" onsubmit="return false;">
+                        <!-- Step 1: Name -->
+                        <div class="form-step active" id="nameStep">
+                            <h3>What's your name?</h3>
+                            <input 
+                                type="text" 
+                                id="nameInput" 
+                                placeholder="Enter your name" 
+                                class="name-input glass-input" 
+                                onkeyup="handleNameInput()"
+                                required
+                            >
+                            <div class="error-message" id="nameError">Please enter your name</div>
+                            <div class="form-navigation">
+                                <div></div>
+                                <button class="next-btn glass-button" onclick="nextStep('name')" id="nameNextBtn" disabled>Next</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Email -->
+                        <div class="form-step" id="emailStep">
+                            <h3>What's your email?</h3>
+                            <input 
+                                type="email" 
+                                id="emailInput" 
+                                placeholder="Enter your email" 
+                                class="email-input glass-input" 
+                                onkeyup="handleEmailInput()"
+                                required
+                            >
+                            <div class="error-message" id="emailError">Please enter your email</div>
+                            <div class="form-navigation">
+                                <button class="prev-btn glass-button" onclick="prevStep('email')">Back</button>
+                                <button class="next-btn glass-button" onclick="nextStep('email')" id="emailNextBtn" disabled>Next</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Message -->
+                        <div class="form-step" id="messageStep">
+                            <h3>Your Message</h3>
+                            <textarea 
+                                id="messageInput" 
+                                placeholder="Type your message here..." 
+                                class="message-input glass-input" 
+                                onkeyup="handleMessageInput()"
+                                required
+                            ></textarea>
+                            <div class="error-message" id="messageError">Please enter your message</div>
+                            <div class="form-navigation">
+                                <button class="prev-btn glass-button" onclick="prevStep('message')">Back</button>
+                                <button class="submit-btn glass-button" onclick="submitForm()" id="submitBtn" disabled>Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <div class="progress-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <!-- Copyright information and social media links -->
+    <footer class="footer glass-gradient">
+        <div class="footer-content">
+            <div class="copyright">
+                © 2025 Mukunzi Ndahiro James. All rights reserved.
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/angeumutoni" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/angeumutoni/" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:umutoniange40@gmail.com" class="social-link" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="images/Ange UMUTONI_Resume_page-0001.jpg" class="social-link" aria-label="Resume">
+                    <i class="fas fa-file-alt"></i>
+                </a>
+            </div>
+        </div>
     </footer>
 
-    <script src="script.js"></script> 
+
+    <script src="script.js"></script>
 </body>
 </html>
